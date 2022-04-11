@@ -24,8 +24,8 @@ main {
     font-size: 200%; 
 
     text-align: center;
-    margin-inline: 1em;
-    padding: 0.5em;
+    margin-inline: 35px;
+    padding: 20px;
 }
 
 .danger-level {
@@ -35,9 +35,14 @@ main {
 .too-late {
     font-family: 'Rubik Glitch', sans-serif;
 }
+
+.main-img {
+    width: 120px;
+}
+
 nav {
     background-color: rgb(96, 0, 0);
-    color:rgb(255, 231, 231);
+    color:rgba(254, 179, 58, 0.79);
 
     font-family: 'IM Fell DW Pica', cursive;
     font-style: italic;
@@ -45,26 +50,24 @@ nav {
     display: flex;
     justify-content: space-around;
 
-    padding: 1em;
+    padding-inline: 10px;
 }
 
-nav > h1 {
-    align-self: flex-start;
-    font-size: 3em;
+.title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
-nav > p {
+.subtitle {
     align-self: flex-end;
-}
-
-nav > ul {
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1.1em;
 }
 
 .nav-items {
     list-style: none;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.1em;
 
     display: flex;
     align-items: center;
@@ -79,7 +82,11 @@ nav > ul {
 footer {
     background-color: rgb(207, 196, 177);
     font-size: small;
-    padding: 0.5em;
+
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .center {

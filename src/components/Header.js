@@ -1,11 +1,15 @@
 import React from 'react'
 
+import title from '../gifs/title.gif'
+
 export default function Header() {
     return (
         <div>
             <nav>
-                <h1>SkullWatch</h1>
-                <p>Your favorite place to get the latest forecast...</p>
+                <div className='title'>
+                    <img src={title} alt='Skull Watch logo' />
+                    <p className='subtitle'>Your favorite place to get the latest forecast...</p>
+                </div>
                 <ul className='nav-items'>
                     <li>About</li>
                     <li>Lies</li>
