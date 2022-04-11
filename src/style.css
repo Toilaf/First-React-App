@@ -40,7 +40,7 @@ main {
     width: 120px;
 }
 
-nav {
+header {
     background-color: rgb(96, 0, 0);
     color:rgba(254, 179, 58, 0.79);
 
@@ -49,14 +49,15 @@ nav {
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     padding-inline: 10px;
 }
 
 .title {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .subtitle {
@@ -68,10 +69,6 @@ nav {
     font-style: italic;
     font-weight: bolder;
     font-size: 1.1em;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     color:rgb(255, 195, 195);
 }
 
