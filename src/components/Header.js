@@ -1,5 +1,5 @@
 import React from 'react'
-import under_construction from './gifs/underconstruction.gif'
+import under_construction from '../gifs/underconstruction.gif'
 
 export default function Header() {
     return (
