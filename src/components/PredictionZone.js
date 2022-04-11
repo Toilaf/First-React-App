@@ -10,7 +10,11 @@ function generatePrediction(x) {
     let message = '';
     if (x === 0) {
         weather = 'Clear'
-        message = 'Low danger today'
+        message = 
+            <>
+                <p>You are safe.</p>
+                <p>For now.</p>
+            </>
     } else if (x === 1) {
         weather = 'Concern'
         message = <h3>Be Concerned. Pack Your Bags. The Sky Darkens</h3>
@@ -22,9 +26,9 @@ function generatePrediction(x) {
         message = 
             <>
                 <h3>IT IS TOO LATE. FEAR FOR YOUR LIFE.</h3>
-                <h2>THE FLAMING SKULL</h2>
-                <h1>IS HERE</h1>
-                <img src={flee} alt='Gif of a red-tinted skull frantically rotating overlaid with the word flee' />
+                <h2 className='too-late'>THE FLAMING SKULL</h2>
+                <h1 className='too-late'>IS HERE</h1>
+                <img src={flee} alt='Gif of a red-tinted skull frantically rotating overlaid with the word flee' width='120'/>
             </>
     }
     return message
@@ -33,10 +37,9 @@ function generatePrediction(x) {
 
 export default function PredictionZone() {
     return (
-        <main className='prediction-zone'>
-            <h1>Danger Level: {x}</h1>
+        <main>
+            <h1 className='danger-level'>Danger Level: {x}</h1>
             {generatePrediction(x)}
-            <p>Put buttons here</p>
         </main>
     )
 }

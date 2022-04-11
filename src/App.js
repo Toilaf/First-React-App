@@ -5,10 +5,11 @@ import Footer from './components/Footer.js';
 
 export default function App() {
     return (
-        <div>
+        <div className='container'>
             <Header />
             <PredictionZone />
             <Footer />
         </div>
     )
 }
+
