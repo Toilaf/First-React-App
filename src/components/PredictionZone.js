@@ -6,7 +6,7 @@ import glow from '../gifs/skullglow.gif'
 import flee from '../gifs/skullflee.gif'
 
 let x = (Math.floor(Math.random()*3)).toString();
-x = 1;
+x = 2;
 
 function generatePrediction(x) {
     let weather = '';
@@ -50,7 +50,7 @@ function generatePrediction(x) {
 export default function PredictionZone() {
     return (
         <main>
-            <h1 className='danger-level'>Danger Level: {x}</h1>
+            <h1 className='danger-level'>Danger Level: {x}/3</h1>
             {generatePrediction(x)}
         </main>
     )

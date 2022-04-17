@@ -7,14 +7,14 @@ export default function Header() {
         <div>
             <header>
                 <div className='title'>
-                    <img src={title} alt='Skull Watch logo' />
+                    <a href='index.html'><img src={title} alt='Skull Watch logo' /></a>
                     <p className='subtitle'>Your favorite place to get the latest forecast...</p>
                 </div>
                 <nav>
                     <ul className='nav-items'>
-                        <li>About</li>
-                        <li>Lies</li>
-                        <li>Promises</li>
+                        <li><a href='about.html' className='nav-links'>About</a></li>
+                        <li><a href='lies.html' className='nav-links'>Lies</a></li>
+                        <li><a href='promises.html' className='nav-links'>Promises</a></li>
                     </ul>
                 </nav>
             </header>
