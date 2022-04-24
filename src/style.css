@@ -100,3 +100,10 @@ footer {
 .clicked {
     width: 5px;
 }
+
+.button--new-prediction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}

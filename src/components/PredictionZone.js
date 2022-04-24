@@ -1,14 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import trumpet from '../gifs/trumpet.gif'
 import glowspin from '../gifs/glowingskull.gif'
 import glow from '../gifs/skullglow.gif'
 import flee from '../gifs/skullflee.gif'
 
-let x = (Math.floor(Math.random()*3)).toString();
-x = 2;
+
+let x = (Math.floor(Math.random()*4)).toString();
+
+/* function randNum() {
+
+    // let [state, setRandom] = useState(ans);
+
+    return ans
+} */
 
 function generatePrediction(x) {
+    x = (Math.floor(Math.random()*4)).toString();
+
     let weather = '';
     let message = '';
     if (x === 0) {
