@@ -2,13 +2,7 @@ import React, {useState, setState} from 'react'
 
 import PredictionZone from './PredictionZone';
 
-export default function PredictionButton() {
-
-    let [pred, setPred] = useState('yes');
-
-    function handleClick() {
-        setPred(<PredictionZone/>)
-    }
+export default function PredictionButton({handleClick}) {
     return (
         <>
             <button
@@ -17,7 +11,6 @@ export default function PredictionButton() {
             >
                 Generate Prediction!
             </button>
-            <h1>{pred}</h1>
         </>
     )
 }
