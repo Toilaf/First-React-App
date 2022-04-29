@@ -6,8 +6,6 @@ export default function PredictionButton() {
 
     let [pred, setPred] = useState('yes');
 
-    function handleEnter() {
-    }
     function handleClick() {
         setPred(<PredictionZone/>)
     }
@@ -16,7 +14,6 @@ export default function PredictionButton() {
             <button
                 className='button--new-prediction'
                 onClick={handleClick}
-                onMouseEnter={handleEnter}
             >
                 Generate Prediction!
             </button>
