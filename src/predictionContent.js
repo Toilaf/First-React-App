@@ -1,3 +1,4 @@
+import React from 'react'
 import trumpet from './gifs/trumpet.gif'
 import glowspin from './gifs/glowingskull.gif'
 import glow from './gifs/skullglow.gif'
